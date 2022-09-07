@@ -14,27 +14,28 @@
 <!-- Bootstrap CSS -->
 
 <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
     
 </head>
 
 <body>
-
-    <header>
-        
-        <div>
-            <div>
+    <div class="container">"></div>
+        <div class ="row"></div>
+    <header class = "jumbotron ">
+       
+        <div class="col-12 col-sm-6">
+            <div class ="col-12 col-sm-4 order-sm-last col-md-3">
                 <div>
-                    <button></button>
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div>
+                <div class ="col col-sm order-sm-first col-md">
                 </div>
             </div>
         </div>
     </header>
 
-    <div>
+    <div class="col-12 col-sm-4 col-md-3">
         <div>
             <div>
                 <h3>Our Lipsmacking Culinary Creations</h3>
@@ -68,19 +69,19 @@
         </div>
     </div>
 
-    <footer class="footer">
-        <div>
-            <div>             
-                <div>
+    <footer >
+        <div class="container">
+            <div class="row">             
+                <div class="col-4 col-sm-2">
                     <h5>Links</h5>
-                    <ul>
+                    <ul class="col-4 offset-1 col-sm-2">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="col-7 col-sm-5">
                     <h5>Our Address</h5>
                     <address>
 		              121, Clear Water Bay Road<br>
@@ -91,7 +92,7 @@
 		              Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
 		           </address>
                 </div>
-                <div>
+                <div class ="col-12 col-sm-4">
                     <div>
                         <a href="http://google.com/+">Google+</a>
                         <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
@@ -101,12 +102,13 @@
                         <a href="mailto:">Mail</a>
                     </div>
                 </div>
-           </div>
-           <div>             
+           
+           <div class ="col-auto">             
                 <div>
                     <p>© Copyright 2018 Ristorante Con Fusion</p>
                 </div>
            </div>
+        </div>
         </div>
     </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
@@ -116,7 +118,8 @@
 · <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 
 · <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+</div>
+</div>
 </body>
 
 </html>
