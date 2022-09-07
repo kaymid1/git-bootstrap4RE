@@ -1,0 +1,11 @@
+# git-bootstrap4RE
+
+ex5: done
+ex6 part 1: grid done!
+Giao diện chưa đẹp
+Commit xong -> part 2:
+ex 6 part 2: 
+container & row at header still error : 8h34p 7/9/2022
+
+
+lab 1 : done ( 22h52p 7/9/2022)
