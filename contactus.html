@@ -67,7 +67,7 @@
               <h3>Location Information</h3>
            </div>
             <div class="col-12 col-sm-4 offset-sm-1">
-                   <h5>Our Address</h5>
+                   <h5>Our Address</h5>                   
                     <address style="font-size: 100%">
 		              121, Clear Water Bay Road<br>
 		              Clear Water Bay, Kowloon<br>
@@ -76,13 +76,18 @@
 		              <i class="fa fa-fax"></i>: +852 8765 4321<br>
 		              <i class="fa fa-envelope"></i>:
                         <a href="mailto:confusion@food.net">confusion@food.net</a>
-		           </address>
+		           </address>                 
             </div>
             <div class="col-12 col-sm-6 offset-sm-1">
                 <h5>Map of our Location</h5>
             </div>
-            <div class="col-12 col-sm-11 offset-sm-1">
-                Button group goes here
+            <div class="col-12 col-sm-11 offset-sm-1"> <!-- Ex9 : Làm button group-->
+                <div class="btn-group" role="group">
+                    <address></address>
+                   <a role="button" class="btn btn-primary" href="tel:+852 1234 5678"><i class="fa fa-phone"></i>Call</a>
+                   <a role="button" class="btn btn-info"><i class="fa fa-skype"></i>Skype</a>
+                   <a role="button" class="btn btn-success" href="mailto:confusion@food.net"><i class="fa fa-envelope-o"></i>Email</a>   
+               </div>
             </div>
         </div>
 
@@ -91,7 +96,21 @@
               <h3>Send us your Feedback</h3>
            </div>
             <div class="col-12 col-md-9">
-                Form goes here
+                <form>
+                    <div class=" from-group row">
+                        <label for="firstname" class="col-md-2 col-form-label">First Name</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                        </div>
+                        <button class="ml-5"type="submit">Submit</button>
+                    </div>
+                </form>
             </div>
              <div class="col-12 col-md">
             </div>
