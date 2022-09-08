@@ -14,18 +14,36 @@
 <!-- Bootstrap CSS -->
 
 <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
+<!-- Ex8-->
+<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
 
     
 </head>
 
 <body>
-    
-    <header class = "jumbotron">
-
-    
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top"> <!-- Tạo một navbar -->
         <div class="container">
-            <div class="row row-header"> >
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar"> <!-- Tạo ra một option để ẩn và hiện item nav bar -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-auto" href="index.html">Ristorante Con Fusion</a> 
+            <div class="collapse navbar-collapse" id="Navbar"> 
+                <!-- navbar-collapse dùng để tách item-->
+                <div class="collapse navbar-collapse"></div>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html">Contact us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </nav>
+    <header class = "jumbotron">   
+        <div class="container">
+            <div class="row row-header">
                 <div class=" col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
@@ -36,12 +54,16 @@
         </div>
     </header>
 
-    <div class="container"> >
+    <div class="container">
         <div class ="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last  col-md-3 ">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
             <div class="col col-sm order-sm-first col-md ">
+                <ol class="col-12 breadcrumb">
+                    <li class="breadcrumb-item active">Home</li>
+                    <li class="breadcrumb-item"><a href="aboutus.html">About us</a></li>
+                  </ol>
                 <h2>Uthappizza</h2>
                 <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
             </div>
@@ -80,7 +102,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="aboutus.html">About Us</a></li>
                         <li><a href="#">Menu</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-7 col-sm-5">

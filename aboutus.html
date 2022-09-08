@@ -6,10 +6,29 @@
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="aboutusstyle.css" />
+    <link rel="stylesheet" href="css/aboutusstyle.css" />
   </head>
 
   <body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top"> <!-- Tạo một navbar -->
+      <div class="container">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar"> <!-- Tạo ra một option để ẩn và hiện item nav bar -->
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand mr-auto" href="index.html">Ristorante Con Fusion</a> 
+          <div class="collapse navbar-collapse" id="Navbar"> 
+              <!-- navbar-collapse dùng để tách item-->
+              <div class="collapse navbar-collapse"></div>
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                  <li class="nav-item active"><a class="nav-link" href="aboutus.html">About us</a></li>
+                  <li class="nav-item"><a class="nav-link" href="contactus.html">Contact us</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+              </ul>
+          </div>
+          
+      </div>
+  </nav>
     <header class="jumbotron"> <!-- dùng để highlight các tên contents-->
       <div class="container"> <!---->
         <div class="row row-header">
@@ -28,10 +47,14 @@
 
     <div class = "container">
       <div class="row row-content">
-        <div class="col-4">
-          <h3>About Us</h3>
-          <hr/>
+        <div class="col-12">
+          <ol class="col-12 breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">About us</li>
+          </ol>
+          <h3>About Us</h3>         
         </div>
+        <hr/>
       </div>
       <div class="row row-content">
         <div class="col-12 col-sm-6">
@@ -120,7 +143,7 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="aboutus.html">About</a></li>
               <li><a href="#">Menu</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="contactus.html">Contact</a></li>
             </ul>
           </div>
           <div class="col-7 col-sm-5">
