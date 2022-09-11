@@ -48,3 +48,23 @@
     padding :50px 0px 0px 0px;
     z-index: 0;
   }
+
+  /* #factsContent{
+    padding: 50px 1000px 50px 0px;
+
+  } */
+
+  #factsContentDetails{
+    display: flex;
+    /* justify-content: baseline; */
+    /* align-items: flex-start; */
+    margin-right: 100px;
+  }
+
+  #factsFigures{
+    margin-right: auto;
+    padding-right: 3%;
+    padding-left: 4%;
+    text-align: center;
+    
+  }
