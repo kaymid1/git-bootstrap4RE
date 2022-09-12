@@ -11,3 +11,4 @@ container & row at header still error : 8h34p 7/9/2022
 lab 1 : done ( 22h52p 7/9/2022)
 
 miro board view : https://miro.com/app/board/uXjVPaeWdgQ=/?share_link_id=678657158413
+ex11 done : 11/9
