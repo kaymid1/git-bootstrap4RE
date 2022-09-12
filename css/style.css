@@ -26,7 +26,7 @@
 }
 
 .jumbotron {
-  padding: 70px 30px 70px 30px;
+  padding: 40px 30px 10px 38px;
 
   margin: 0px auto;
 
@@ -50,4 +50,9 @@ body{
 
 .navbar-dark{
   background-color: #552fad;
+}
+
+#indexLogo{
+  padding-left:150px;
+  display: flex;
 }
