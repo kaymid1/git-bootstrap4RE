@@ -53,6 +53,66 @@ body{
 }
 
 #indexLogo{
-  padding-left:150px;
+  /* padding-left:150px; */
   display: flex;
+  margin-left: 100px;
+}
+
+#thisMonthContent{
+  margin-top: 30px;
+}
+/* .bg-warning{
+  bg-
+} */
+.h3Content{
+  padding-left: 100px;
+  padding-right:100px;
+}
+
+.rowFlex{
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  height: 45%;
+  margin-bottom: 40px;
+
+}
+.table-header{
+  width: 100%;
+
+}
+.border{
+  padding-left: 10px;
+}
+
+/* .d-flex{
+  display: flex;
+  justify-content: center;
+} */
+/* .flex-row{
+  justify-content: center;
+} */
+.btn-primary{
+  /* display: flex; */
+  /* justify-content: flex-start; */
+  height: fit-content;
+  position: relative;
+  left:17%;
+}
+
+.btn-warning{
+  height: 20%;
+  margin-top: 46px;
+  margin-right: 43px;
+}
+.dateBox{
+  margin-left:67px;
+  width: min-content;
+}
+.timeBox{
+  margin-left: 50px;
+  width: min-content;
+}
+.placeholder{
+  text-align: left;
 }

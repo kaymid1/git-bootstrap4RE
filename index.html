@@ -18,6 +18,8 @@
 <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/loading.css">
+
+
 <!-- Ex8-->
 <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
 
@@ -37,10 +39,10 @@
                 <!-- navbar-collapse dùng để tách item-->
                 <div class="collapse navbar-collapse"></div>
                 <ul class="navbar-nav mr-auto">                
-                    <li class="nav-item active"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg">Home</i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg">About us</i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-list fa-lg">Contact us</i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-address-card fa-lg">Menu</i></a></li>
+                    <li class="nav-item active"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"> Home</i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"> About us</i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-list fa-lg"> Contact us</i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-address-card fa-lg"> Menu</i></a></li>
                 </ul>
             </div>
             
@@ -49,17 +51,23 @@
 
     <header class = "jumbotron">   
         <div class="container">
-            <div class="col-12 col-sm align-self-center">
-                <img src="img/logo.png" id="indexLogo" class="img-fluid">
-            </div>
+            <!-- <div class="col-12 col-sm align-self-center">
+                
+            </div> -->
             <div class="row row-header">
                 <div class=" col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
                 <div class="col-12 col-sm">
+                    
+                    <img src="img/logo.png" id="indexLogo" class="img-fluid">
+                    
                 </div>
+            <!--REVERSE TABLE BUTTON USING DATA-TOGGLE-->
+                <a href="#" class= "btn btn-warning" type="">Reverse Table</a>
             </div>
+            
         </div>
     </header>
 
@@ -75,23 +83,25 @@
                   </ol>
                 <div class="media">
                     <img src="img/uthappizza.png" alt="Uthappizza" class="d-flex mr-3 img-thumbnail align-self-center">
-                    <div class="media-body"><h2 class="mt-0">Uthappizza</h2>
+                    <div class="media-body"><h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
                         <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                     </div>
                 </div>
             </div>
         </div>
 
-
+        <!--WEEKEND GRAND BUFFET-->
         <div class ="row row-content align-items-center">
             <div class="col-12 col-sm-4  order-sm-last col-md-3">
-                <h3>This Month's Promotions</h3>
+                <img src="img/buffet.png" alt="Weekend Grand Buffet" class="d-flex mr-3 img-thumbnail align-self-center">
             </div>
             <div class="col col-sm order-sm-first col-md ">
                 <div class="media">
-                    <img src="img/buffet.png" alt="Weekend Grand Buffet" class="d-flex mr-3 img-thumbnail align-self-center">
-                    <div class="media-body">
-                        <h2 class="mt-0">Weekend Grand Buffet</h2>
+                    <div class="col-12 col-sm-4  order-sm-start col-md-3" id ="thisMonthContent">
+                        <h3>This Month's Promotions</h3>
+                    </div>
+                    <div class="media-body"> <!--BADGE CLASS -->                       
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge bg-danger text-white">New</span></h2>
                         <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
                     </div>
                 </div>
@@ -114,7 +124,37 @@
         </div>
     </div>
     </div>
+    <!--REVERSE A TABLE-->
+    <div class="collapse row rowFlex" id="target"> 
+        <span class="col-sm-10">
+            <div class="table col-sm-2 row">
+                <div class="table-header bg-warning text-white pt-2 pb-2 col-sm-12"><h3 class="h3Content">Reserve a Table</h3></div>
+                <div class="border col-12">
+                <span class="table-body d-flex mb-3 col-9 mt-3">Number of Guests
+                        <div class="d-flex flex-row mb-3 ml-5 pl-1 ">
+                            <input class="p-2 m-2" type="radio">1
+                            <input class="p-2 m-2" type="radio">2
+                            <input class="p-2 m-2" type="radio">3
+                            <input class="p-2 m-2" type="radio">4
+                            <input class="p-2 m-2" type="radio">5
+                            <input class="p-2 m-2" type="radio">6                           
+                          </div>                    
+                </span>
+                <span class="table-body d-flex mb-3 col-9 ml-1 mt-2 pl-3 col-sm-3">Date and Time
+                    <div class="d-flex flex-row mb-3 ml-3">
+                        <input class="dateBox m-3 p-1" type="text" placeholder="Date">
+                        <input class="timeBox m-3 p-1" type="text" placeholder="Time">
+                      </div>               
+                </span>
+                <span class="table-footer d-flex mb-3 col-9 ml-3 mt-2">
+                    <button class="btn btn-primary ml-5">Reserve</button>
+                </span>
+            </div>
+            </div>
+        </span>      
     </div>
+    </div>
+    
     <footer class="footer">
         <div class="container">
             <div class="row">             
