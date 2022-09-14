@@ -13,4 +13,4 @@ lab 1 : done ( 22h52p 7/9/2022)
 miro board view : https://miro.com/app/board/uXjVPaeWdgQ=/?share_link_id=678657158413
 ex11 done : 11/9
 ex12 done : 12/9
-
+ex13 done : 14/9
