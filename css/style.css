@@ -100,6 +100,180 @@ body{
   left:17%;
 }
 
+/* Uthappizza */
+h3#contentOurLCC2 {
+  margin-right: 80px;
+}
+@media only screen and (max-width: 576px) {
+  #contentOurLCC1 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #contentOurLCC1 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  #contentOurLCC2 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px){
+  #dollaBadge1{
+    display:none;
+  }
+}
+
+@media only screen and (min-width:576px){
+  #dollaBadge2{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px){
+  #hotBadge1{
+    display: none;
+  }
+}
+/* @media only screen and (max-width: 992px){
+  #hotBadge1{
+    display: none;
+  }
+} */
+
+@media only screen and (min-width: 576px){
+  #hotBadge2{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px){
+  #hotBadge1{
+    display: none;
+  }
+}
+
+#hotBadge2, #dollaBadge2{
+  margin-right: 110px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: large;
+  margin-bottom: 5px;
+}
+#dollaBadge2{
+  padding-right: 9px;
+  padding-left: 9px;
+}
+
+/* #hotBadge2, #dollaBadge2, #uthappizzaContent{
+    
+} */
+
+/* WEEKEND GRAND BUFFET */
+
+#thisMonthContent1{
+  padding-top: 5%;
+}
+#thisMonthContent2{
+  width: 76%;
+}
+
+
+/* p#fadeshow2{
+  text-align: center;
+  height: 60%;
+  width: 100%;  
+} */
+
+@media only screen and (max-width: 576px){
+  #buffetImage{
+    position: relative;
+    top: 150px;
+  }
+}
+
+@media only screen and (min-width: 576px){
+  #thisMonthContent2{
+    display:none;
+  }
+}
+/* 627px */
+/* @media only screen and (max-width: 576px){ 
+  #thisMonthContent1{
+    position: relative;
+    bottom: 80px;
+    padding-right: 100px;
+  }
+}   */
+
+@media only screen and (max-width: 576px){
+  #thisMonthContent1{
+    display: none;
+  }
+}
+
+
+
+
+
+/* reverseTableButton */
+
+@media only screen and (max-width: 576px) {
+  #reverseTableButton1 {
+    display: block;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #reverseTableButton1 {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #reverseTableButton2 {
+    display: none;
+  }
+}
+
+#reverseTableButton2{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* REVERSE TABLE */
+@media only screen and (min-width: 767px){
+  #reverseFlex{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* @media only screen and (max-width: 765px){
+  #reverseFlex{
+    display: none;
+  }
+} */
+
+/* @media only screen and (min-width: 765px){
+  #reverseFlex2{
+    display: none;
+
+  }
+}
+
+@media only screen and (max-width: 765px){
+  #reverseFlex2{
+    display: block;
+
+  }
+} */
+
+
+
 .btn-warning{
   height: 20%;
   margin-top: 46px;
@@ -120,3 +294,29 @@ body{
 .tableReverse{
   margin-left:57%;
 }
+
+
+/* Khi màn hình nhỏ về 625px thì thông tin được undisplay */
+
+@media only  screen and (max-width: 625px) {
+  #fadeshow1 {
+      display: none;
+  }
+  #fadeshow2 {
+      display: none;
+  }
+  #fadeshow3 {
+      display: none;
+  }
+}
+
+/* */
+#buffetMove{
+  left: 35%;
+  text-align: center;
+}
+
+/* #buffetImage{
+  position: relative;
+  top: 70px;
+} */

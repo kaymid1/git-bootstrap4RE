@@ -6,7 +6,7 @@
     <!-- Required meta tags always come first -->
 
  <meta charset="utf-8">
-
+ <!--viewport là -->
  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
  <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -63,28 +63,39 @@
                     
                     <img src="img/logo.png" id="indexLogo" class="img-fluid">
                     
-                </div>
-            <!--REVERSE TABLE BUTTON USING DATA-TOGGLE-->
-                <a href="#" class= "btn btn-warning" type="">Reverse Table</a>
-            </div>
-            
+                </div>   
+                <a href="#testform" class= "btn btn-warning" type="" id="reverseTableButton1">Reverse Table</a>            
+            </div>           
         </div>
+        <div>
+            <a href="#testform" class= "btn btn-warning" type="" id="reverseTableButton2">Reverse Table</a>
+        </div>
+        
     </header>
 
     <div class="container">
+        <!--UTHAPPIZZA-->
         <div class ="row row-content align-items-center">
-            <div class="col-12 col-sm-4 order-sm-last  col-md-3 ">
+
+            <!--Col-md-2 ở màn hình medium thì đối tượng chiếm 2 cột-->
+
+            <div class="col-12 col-sm-4 order-sm- col-md-2 " id="contentOurLCC1">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
-            <div class="col col-sm order-sm-first col-md ">
+
+            <div class="col col-sm order-sm-first  ">
                 <ol class="col-12 breadcrumb">
                     <li class="breadcrumb-item active">Home</li>
                     <li class="breadcrumb-item"><a href="aboutus.html">About us</a></li>
-                  </ol>
+                </ol>
+                
+                <h3 id="contentOurLCC2">Our Lipsmacking Culinary Creations</h3>
+                 
                 <div class="media">
                     <img src="img/uthappizza.png" alt="Uthappizza" class="d-flex mr-3 img-thumbnail align-self-center">
-                    <div class="media-body"><h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
-                        <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                    <div class="media-body"><h2 class="mt-0" id="uthappizzaContent">Uthappizza <span class="badge badge-danger" id="hotBadge1">HOT</span> <span class="badge badge-pill badge-secondary" id="dollaBadge1">$4.99</span></h2>
+                        <span class="badge badge-danger" id="hotBadge2">HOT</span> <br> <span class="badge badge-pill badge-secondary" id="dollaBadge2">$4.99</span>
+                        <p id="fadeshow1">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                     </div>
                 </div>
             </div>
@@ -92,22 +103,31 @@
 
         <!--WEEKEND GRAND BUFFET-->
         <div class ="row row-content align-items-center">
-            <div class="col-12 col-sm-4  order-sm-last col-md-3">
-                <img src="img/buffet.png" alt="Weekend Grand Buffet" class="d-flex mr-3 img-thumbnail align-self-center">
-            </div>
-            <div class="col col-sm order-sm-first col-md ">
+            <div class="col  order-sm-first ">
                 <div class="media">
-                    <div class="col-12 col-sm-4  order-sm-start col-md-3" id ="thisMonthContent">
-                        <h3>This Month's Promotions</h3>
-                    </div>
-                    <div class="media-body"> <!--BADGE CLASS -->                       
-                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge bg-danger text-white">New</span></h2>
-                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                  <div class="col-6 align-self-start col-md-3 col-sm-5" id ="thisMonthContent1">
+                    <h3>This Month's Promotions</h3>
+                  </div>
+                  <div class="media-body">    
+                    <div class="col-12 col-sm-4  order-sm-start col-md-3"  id ="thisMonthContent2">
+                    <h3>This Month's Promotions</h3>
+                    </div> 
+                      
+                      <div class="col-12 col-sm-12 "><h2 class="mt-0" id="buffetMove">Weekend Grand Buffet 
+                                <span class="badge bg-danger text-white">New</span></h2>
+                        <p id="fadeshow2">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                      </div>
+                        
+                  </div>  
+                  
+                    <div class="col-12 col-sm-4 order-sm-end col-md-3">
+                        <img src="img/buffet.png" alt="Weekend Grand Buffet" class="d-flex mr-3 img-thumbnail align-self-center" id="buffetImage">
                     </div>
                 </div>
             </div>
         </div>
 
+        <!--ALBERTO SOMAYYA-->
         <div class ="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Meet our Culinary Specialists</h3>
@@ -118,42 +138,225 @@
                 <div class="media-body">
                     <h2 class="mt-0">Alberto Somayya</h2>
                     <h4>Executive Chef</h4>
-                    <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                    <p id="fadeshow3"">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
                 </div>
             
         </div>
     </div>
     </div>
+
     <!--REVERSE A TABLE-->
-    <div class="collapse row rowFlex" id="target"> 
-        <div class="tableReverse">
-            <div class="table row">
-                <div class="table-header bg-warning text-white pt-2 pb-2 col-6 col-sm-12"><h3 class="h3Content">Reserve a Table</h3></div>
-                <div class="border col-sm-12">
-                <span class="table-body d-flex mb-3 mt-3 ">Number of Guests
-                        <div class="d-flex flex-row mb-3 ml-5 pl-1 col-sm-6">
-                            <input class="p-2 m-2" type="radio">1
-                            <input class="p-2 m-2" type="radio">2
-                            <input class="p-2 m-2" type="radio">3
-                            <input class="p-2 m-2" type="radio">4
-                            <input class="p-2 m-2" type="radio">5
-                            <input class="p-2 m-2" type="radio">6                           
-                          </div>                    
-                </span>
-                <span class="table-body d-flex mb-3 col-9 ml-1 mt-2 pl-3 col-sm-5">Date and Time
-                    <div class="d-flex flex-row mb-3 ml-3">
-                        <input class="dateBox m-3 p-1" type="text" placeholder="Date">
-                        <input class="timeBox m-3 p-1" type="text" placeholder="Time">
-                      </div>               
-                </span>
-                <span class="table-footer d-flex mb-3 col-9 ml-3 mt-2">
-                    <button class="btn btn-primary ml-5">Reserve</button>
-                </span>
-            </div>
-            </div>
+    <div class="row" id="reverseFlex">
+      <div class="col-12 col-md-6 col-sm-8"> <!--Test lai-->
+        <div class="card-header bg-warning text-white">
+            Reverse a Table
         </div>
+        <div class="card-body">
+            <form>
+              <div class="form-group row">
+                <!--Guest Numbers-->
+                <label for="GuestNumbers" class="col-12 col-md-4 col-form-label"
+                  >Numbers of guest</label>
+                <div class="col-12 col-md-7">
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        value=""
+                      />1
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        value=""
+                      />2
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        value=""
+                      />3
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        value=""
+                      />4
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        value=""
+                      />5
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        value=""
+                      />6
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="DateTimes" class="col-12 col-md-4 col-form-label"
+                  >Date and Time</label
+                >
+    
+                <div class="col-12 col-md-3">
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="date"
+                    name="date"
+                    placeholder="Date"
+                  />
+                </div>
+    
+                <div class="col-12 col-md-4">
+                  <input
+                    type="time"
+                    class="form-control"
+                    id="time"
+                    name="time"
+                    placeholder="Time"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="offset-md-4 col-md-10">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
     </div>
+
+    <!--REVERSE FLEX 2 for reverse table-->
+
+    <!-- <div class="row" id="reverseFlex2">
+      <div class="col-12 col-md-6 col-sm-8"> 
+        <div class="card-header bg-warning text-white">
+            Reverse a Table
+        </div>
+        <div class="card-body">
+            <form>
+              <div class="form-group row">
+                <label for="GuestNumbers" class="col-12 col-md-4 col-form-label"
+                  >Numbers of guest</label>
+                <div class="col-12 col-md-7">
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        value=""
+                      />1
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        value=""
+                      />2
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        value=""
+                      />3
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        value=""
+                      />4
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        value=""
+                      />5
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        value=""
+                      />6
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="DateTimes" class="col-12 col-md-4 col-form-label"
+                  >Date and Time</label
+                >
+    
+                <div class="col-12 col-md-3">
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="date"
+                    name="date"
+                    placeholder="Date"
+                  />
+                </div>
+    
+                <div class="col-12 col-md-4">
+                  <input
+                    type="time"
+                    class="form-control"
+                    id="time"
+                    name="time"
+                    placeholder="Time"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="offset-md-4 col-md-10">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div> -->
+    
     
     <footer class="footer">
         <div class="container">
