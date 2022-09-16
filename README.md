@@ -14,3 +14,5 @@ miro board view : https://miro.com/app/board/uXjVPaeWdgQ=/?share_link_id=6786571
 ex11 done : 11/9
 ex12 done : 12/9
 ex13 done : 14/9
+
+Lab2 done : 16/9
