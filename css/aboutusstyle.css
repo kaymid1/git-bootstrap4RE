@@ -69,7 +69,24 @@
     
   }
   #indexLogo{
-    padding-left:80px;
-
-    
+    padding-left:80px; 
   }
+
+/* COPORATE LEADERSHIP */
+/* Đóng hộp nội dung của mỗi ngăn */
+  .tab-content{
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding:10px;
+  }
+
+
+/* DANNY */
+/* 
+.dataShow{
+  list-style-type: none;
+  display: block;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 2rem;
+} */
