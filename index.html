@@ -26,6 +26,8 @@
     
 </head>
 
+<!--BODY-->
+
 <body>
     
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top"> <!-- Tạo một navbar -->
@@ -34,28 +36,81 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a href="index.html" class="navbar-brand mr-auto"><img src="img/logo.png" height="30" width="41"></a>
-            <a class="navbar-brand mr-auto" href="index.html">Ristorante Con Fusion</a> 
+            <!-- <a class="navbar-brand mr-auto" href="index.html">Ristorante Con Fusion</a>  -->
             <div class="collapse navbar-collapse" id="Navbar"> 
                 <!-- navbar-collapse dùng để tách item-->
-                <div class="collapse navbar-collapse"></div>
+                <!-- <div class="collapse navbar-collapse"></div> -->
                 <ul class="navbar-nav mr-auto">                
                     <li class="nav-item active"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"> Home</i></a></li>
                     <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"> About us</i></a></li>
                     <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-list fa-lg"> Contact us</i></a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-address-card fa-lg"> Menu</i></a></li>
                 </ul>
+                <!--ADDING MODAL INTO NAVBAR-->
+                <span class="navbar-text">
+                  <!--data-toggle="modal": chuyển sang modal có id target là loginModal-->
+                  <a data-toggle="modal" data-target="#loginModal" href="" id="loginContent" class="">
+                    <span class="fa fa-sign-in"></span>  Login
+                  </a>
+                </span>
             </div>
             
         </div>
     </nav>
 
+    <!--MODAL EX16-->
+
+    <!--fade: when be call, it will fade in to the web page-->
+    <!--role: dialog => place on top of the page-->
+    <div id="loginModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg" role="content">
+        <!--Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Login</h4>
+            <!--class:close -> click will close the content-->
+            <!--data-dismiss="modal" : khi click thì modal sẽ biến mất khỏi màn hình-->
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <!--Adding form to login button-->
+            <form>
+              <div class="form-row">
+                <div class="form-group col-sm-4">
+                  <label for="emailInput" class="sr-only">Email</label>
+                  <input type="email" class="form-control form-control-sm" id="emailInput" placeholder="Type in your email address">
+                </div>
+                <div class="form-group col-sm-4">
+                  <label for="passwordInput" class="sr-only">Password</label>
+                  <input type="password" class="form-control form-control-sm" id="passwordInput"placeholder="Type in your password">
+                </div>
+                <div class="col-sm-auto mt-2">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input"> 
+                    <label for="" class="form-check-label"> Remember me </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row" id="signinButtonRow">
+                <!--btn-sm : small screen btn small too-->
+                <button type="button" class="btn btn-primary btn-sm ml-auto" data-dismiss="modal" id="cancelbutton">Cancel</button>
+                <button type="submit" class="btn btn-secondary btn-sm ml-1"  id="signinbutton">Sign in</button>
+              </div>
+            </form>          
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--HEADER-->
+
     <header class = "jumbotron">   
         <div class="container">
-            <!-- <div class="col-12 col-sm align-self-center">
-                
-            </div> -->
             <div class="row row-header">
                 <div class=" col-12 col-sm-6">
+<!--RISTORANTE CON FUSION-->
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
@@ -64,11 +119,18 @@
                     <img src="img/logo.png" id="indexLogo" class="img-fluid">
                     
                 </div>   
-                <a href="#testform" class= "btn btn-warning" type="" id="reverseTableButton1">Reverse Table</a>            
+                <!--data-html="true" : tooltip content có thể type vào bằng html-->
+                <a class= "btn btn-warning" type="" id="reverseTableButton1" 
+                data-toggle="tooltip" data-html="true" 
+                title="Or Call us at<br><strong>+94 3665999"
+                data-placement="bottom" href="#testform" 
+                  >Reverse Table</a>            
             </div>           
         </div>
         <div>
-            <a href="#testform" class= "btn btn-warning" type="" id="reverseTableButton2">Reverse Table</a>
+            <a href="#testform" class= "btn btn-warning" type="" id="reverseTableButton2" data-toggle="tooltip" data-html="true" 
+            title="Or Call us at<br><strong>+94 3665999"
+            data-placement="bottom">Reverse Table</a>
         </div>
         
     </header>
@@ -145,7 +207,8 @@
     </div>
     </div>
 
-    <!--REVERSE A TABLE-->
+    <!--REVERSE TABLE-->
+
     <div class="row" id="reverseFlex">
       <div class="col-12 col-md-6 col-sm-8"> <!--Test lai-->
         <div class="card-header bg-warning text-white">
@@ -251,113 +314,8 @@
     </div>
     </div>
 
-    <!--REVERSE FLEX 2 for reverse table-->
+<!--FOOTER-->
 
-    <!-- <div class="row" id="reverseFlex2">
-      <div class="col-12 col-md-6 col-sm-8"> 
-        <div class="card-header bg-warning text-white">
-            Reverse a Table
-        </div>
-        <div class="card-body">
-            <form>
-              <div class="form-group row">
-                <label for="GuestNumbers" class="col-12 col-md-4 col-form-label"
-                  >Numbers of guest</label>
-                <div class="col-12 col-md-7">
-                  <div class="form-check-inline">
-                    <label class="form-check-label">
-                      <input
-                        type="checkbox"
-                        class="form-check-input"
-                        value=""
-                      />1
-                    </label>
-                  </div>
-                  <div class="form-check-inline">
-                    <label class="form-check-label">
-                      <input
-                        type="checkbox"
-                        class="form-check-input"
-                        value=""
-                      />2
-                    </label>
-                  </div>
-                  <div class="form-check-inline">
-                    <label class="form-check-label">
-                      <input
-                        type="checkbox"
-                        class="form-check-input"
-                        value=""
-                      />3
-                    </label>
-                  </div>
-                  <div class="form-check-inline">
-                    <label class="form-check-label">
-                      <input
-                        type="checkbox"
-                        class="form-check-input"
-                        value=""
-                      />4
-                    </label>
-                  </div>
-                  <div class="form-check-inline">
-                    <label class="form-check-label">
-                      <input
-                        type="checkbox"
-                        class="form-check-input"
-                        value=""
-                      />5
-                    </label>
-                  </div>
-                  <div class="form-check-inline">
-                    <label class="form-check-label">
-                      <input
-                        type="checkbox"
-                        class="form-check-input"
-                        value=""
-                      />6
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="DateTimes" class="col-12 col-md-4 col-form-label"
-                  >Date and Time</label
-                >
-    
-                <div class="col-12 col-md-3">
-                  <input
-                    type="date"
-                    class="form-control"
-                    id="date"
-                    name="date"
-                    placeholder="Date"
-                  />
-                </div>
-    
-                <div class="col-12 col-md-4">
-                  <input
-                    type="time"
-                    class="form-control"
-                    id="time"
-                    name="time"
-                    placeholder="Time"
-                  />
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="offset-md-4 col-md-10">
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div> -->
-    
-    
     <footer class="footer">
         <div class="container">
             <div class="row">             
@@ -403,12 +361,21 @@
 </div>
 </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+  
 
 · <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 
 · <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 
 · <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script>
+    // khởi tạo tooltip, select theo data-toggle
+    $(document).ready(function(){
+      //khi data-toggle -> tooltip thì chạy hàm tooltip(), show data 
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
 
 </body>
 

@@ -320,3 +320,23 @@ h3#contentOurLCC2 {
   position: relative;
   top: 70px;
 } */
+
+
+/* Modal loginform */
+
+#signinButtonRow{
+  margin-right: 150px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* #signinbutton{
+  margin-left: 20%;
+} */
+#cancelbutton{
+  margin-right: 17%;
+}
+
+/* #signinbutton{
+  margin-right: 60px;
+} */
