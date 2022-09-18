@@ -340,3 +340,27 @@ h3#contentOurLCC2 {
 /* #signinbutton{
   margin-right: 60px;
 } */
+
+/* 
+CAROUSEL */
+
+.carousel{
+  background: #512DA8;
+}
+
+.carousel-item{
+  height: 300px;
+}
+
+.carousel-item img{
+  position: absolute;
+  /* top: 0, left: 0 sẽ cho hình ảnh ra góc trái trên cùng của frame */
+  top: 0;
+  left: 0;
+  /* min-height: 300px sẽ cho khung hình trải ra hết height item */
+  min-height: 300px;
+}
+
+/* #fadeshow1, #fadeshow2, #fadeshow3{
+  margin-top: 200px;
+} */
