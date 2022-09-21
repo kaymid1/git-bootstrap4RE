@@ -295,6 +295,13 @@ h3#contentOurLCC2 {
   margin-left:57%;
 }
 
+#reverseTable{
+  color: white;
+  padding: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 
 /* Khi màn hình nhỏ về 625px thì thông tin được undisplay */
 
@@ -344,6 +351,7 @@ h3#contentOurLCC2 {
 /* 
 CAROUSEL */
 
+
 .carousel{
   background: #512DA8;
 }
@@ -364,3 +372,15 @@ CAROUSEL */
 /* #fadeshow1, #fadeshow2, #fadeshow3{
   margin-top: 200px;
 } */
+
+#sectionSmoke{
+  margin-left:100px;
+}
+
+#carouselButton{
+  right:0px;
+  position: absolute;
+  right: 0px;
+  padding-top:10px;
+
+}

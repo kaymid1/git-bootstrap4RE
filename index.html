@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/loading.css">
 
-
+<script src="index.js"></script>
 <!-- Ex8-->
 <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
 
@@ -106,33 +106,129 @@
 
     <!--HEADER-->
 
-    <header class = "jumbotron">   
+    <header class = "jumbotron">    
         <div class="container">
             <div class="row row-header">
                 <div class=" col-12 col-sm-6">
-<!--RISTORANTE CON FUSION-->
+      <!--RISTORANTE CON FUSION-->
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm asign-self-center">
-                    
-                    <img src="img/logo.png" id="indexLogo" class="img-fluid">
-                    
+                <div class="col-12 col-sm asign-self-center">                    
+                    <img src="img/logo.png" id="indexLogo" class="img-fluid">                   
                 </div>   
                 <!--data-html="true" : tooltip content có thể type vào bằng html-->
-                <a class= "btn btn-warning" type="" id="reverseTableButton1" 
+                <!-- <a class= "btn btn-warning" type="" id="reverseTableButton1" 
                 data-toggle="tooltip" data-html="true" 
                 title="Or Call us at<br><strong>+94 3665999"
                 data-placement="bottom" href="#testform" 
-                  >Reverse Table</a>            
-            </div>           
+                  >Reverse Table</a>-->
+                  <div>
+                <a data-toggle="modal" data-target="#reverseModal" href="" id="reverseTable" class="bg-warning">Reverse Table</a>
+                </div>           
         </div>
-        <div>
+
+    <!-- LAB3 : REVERSE TABLE MODAL-->
+
+        <!--fade: when be call, it will fade in to the web page-->
+        <!--role: dialog => place on top of the page-->
+      <div class="container text-dark">
+        <div id="reverseModal" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-lg" role="content">
+            <!--Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title text-dark">Reverse Table</h4>
+                <!--class:close -> click will close the content-->
+                <!--data-dismiss="modal" : khi click thì modal sẽ biến mất khỏi màn hình-->
+                  <button type="button" class="close" data-dismiss="modal">
+                   &times;
+                  </button>
+              </div>
+              <div class="modal-body">
+                <!--Adding form to login button-->
+                <form class="container">
+                  <div class="form-group row">
+                    <label for="GuestNumbers" class="col-12 col-md-4 col-form-label">Numbers of guest</label>
+                    <div class="col-12 col-md-7">
+                      <div class="form-check-inline">
+                        <label for="" class="form-check-label">
+                          <input type="checkbox" class="form-check-input">1
+                        </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label for="" class="form-check-label">
+                          <input type="checkbox" class="form-check-input">2
+                        </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label for="" class="form-check-label">
+                          <input type="checkbox" class="form-check-input">3
+                        </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label for="" class="form-check-label">
+                          <input type="checkbox" class="form-check-input">4
+                        </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label for="" class="form-check-label">
+                          <input type="checkbox" class="form-check-input">5
+                        </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label for="" class="form-check-label">
+                          <input type="checkbox" class="form-check-input">6
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+<!--Section Smoking/nonSmoking-->
+                  <div class="form-group row ml-5 mt-3 pb-2" id="sectionSmoke">
+                    <div class="col-12 col-md-2">
+                      <p>Section</p>
+                    </div>
+                    <div class="col-12 col-md-10">
+                      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-success active">
+                            <input type="radio" name="options" id="nonsmoking" autocomplete="off" checked> Non-Smoking
+                        </label>
+                        <label class="btn btn-danger">
+                            <input type="radio" name="options" id="smoking" autocomplete="off">Smoking
+                        </label>                        
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="form-group row">
+                    <label for="DateTimes" class="col-12 col-md-4 col-form-label">Data and Time</label>
+                    <div class="col-12 col-md-3">
+                      <input type="date" class="form-control" id="date" name="date" placeholder="Date">
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                      <input type="time" class="form-control" id="time" name="time" placeholder="Time">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <div class="offset-md-4 col-md-10">
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                  </div>
+                </form> 
+            </div>
+          </div>
+        </div>
+
+
+        <!--tooltip here-->
+        <!-- <div>
             <a href="#testform" class= "btn btn-warning" type="" id="reverseTableButton2" data-toggle="tooltip" data-html="true" 
             title="Or Call us at<br><strong>+94 3665999"
             data-placement="bottom">Reverse Table</a>
         </div>
-        
+      </div>   -->
     </header>
 
     <div class="container">
@@ -141,8 +237,8 @@
       <div class="row row-content">
         <div class="col">
           <div class="carousel slide" id="mycarousel" data-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-              <div class="carousel-item active">
+            <div class="carousel-inner" role="listbox">             
+              <div class="carousel-item active" >
                 <img src="img/uthappizza.png" alt="uthappizza" class="d-block img-fluid">
                 <div class="carousel-caption d-none d-md-block">
                   <!--Overlay the caption on the image-->
@@ -152,7 +248,7 @@
 
                 </div>
               </div>
-              <div class="carousel-item">
+                <div class="carousel-item">
                 <img src="img/buffet.png" alt="buffet" class="d-block img-fluid">
                 <div class="carousel-caption d-none d-md-block">
                   <h2>Weekend Grand Buffet 
@@ -160,16 +256,17 @@
                     <p id="fadeshow2" class="mt-5">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>  
                 </div>
                 
-              </div>
-              <div class="carousel-item">
+                </div>
+                <div class="carousel-item">
                 <img src="img/alberto.png" alt="alberto" class="d-block img-fluid">
                 <div class="carousel-caption d-none d-md-block">
                   <h2>Alberto Somayya</h2>
                   <h4>Executive Chef</h4>
                   <p id="fadeshow3">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
                 </div>
-              </div>
+                </div>
             </div>
+            
             <!--CAROUSEL CONTROL-->
             <!--Indicators : will be position on the carousel slide -->
             <ol class="carousel-indicators">
@@ -184,8 +281,20 @@
             <a href="#mycarousel" class="carousel-control-next" role="button" data-slide="next">
               <span class="carousel-control-next-icon"></span>
             </a>
-          </div>
-        </div>
+            <button class="btn btn-danger btn-sm" id="carouselButton">
+              <span class="fa fa-pause"></span>
+            </button>
+            <!--EXERCISE 18-->
+            <!-- <div class="btn-group" id="carouselButton">
+              <button class="btn btn-danger btn-sm" id="carousel-pause">
+                <span class="fa fa-pause"></span>
+              </button>
+              <button class="btn btn-success btn-sm" id="carousel-play">
+                <span class="fa fa-play"></span>
+              </button>
+            </div>-->
+              
+            </div>  
       </div>
 
         <!--UTHAPPIZZA-->
@@ -260,112 +369,7 @@
     </div>
     </div>
 
-    <!--REVERSE TABLE-->
-
-    <div class="row" id="reverseFlex">
-      <div class="col-12 col-md-6 col-sm-8"> <!--Test lai-->
-        <div class="card-header bg-warning text-white">
-            Reverse a Table
-        </div>
-        <div class="card-body">
-            <form>
-              <div class="form-group row">
-                <!--Guest Numbers-->
-                <label for="GuestNumbers" class="col-12 col-md-4 col-form-label"
-                  >Numbers of guest</label>
-                <div class="col-12 col-md-7">
-                  <div class="form-check-inline">
-                    <label class="form-check-label">
-                      <input
-                        type="checkbox"
-                        class="form-check-input"
-                        value=""
-                      />1
-                    </label>
-                  </div>
-                  <div class="form-check-inline">
-                    <label class="form-check-label">
-                      <input
-                        type="checkbox"
-                        class="form-check-input"
-                        value=""
-                      />2
-                    </label>
-                  </div>
-                  <div class="form-check-inline">
-                    <label class="form-check-label">
-                      <input
-                        type="checkbox"
-                        class="form-check-input"
-                        value=""
-                      />3
-                    </label>
-                  </div>
-                  <div class="form-check-inline">
-                    <label class="form-check-label">
-                      <input
-                        type="checkbox"
-                        class="form-check-input"
-                        value=""
-                      />4
-                    </label>
-                  </div>
-                  <div class="form-check-inline">
-                    <label class="form-check-label">
-                      <input
-                        type="checkbox"
-                        class="form-check-input"
-                        value=""
-                      />5
-                    </label>
-                  </div>
-                  <div class="form-check-inline">
-                    <label class="form-check-label">
-                      <input
-                        type="checkbox"
-                        class="form-check-input"
-                        value=""
-                      />6
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="DateTimes" class="col-12 col-md-4 col-form-label"
-                  >Date and Time</label
-                >
-    
-                <div class="col-12 col-md-3">
-                  <input
-                    type="date"
-                    class="form-control"
-                    id="date"
-                    name="date"
-                    placeholder="Date"
-                  />
-                </div>
-    
-                <div class="col-12 col-md-4">
-                  <input
-                    type="time"
-                    class="form-control"
-                    id="time"
-                    name="time"
-                    placeholder="Time"
-                  />
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="offset-md-4 col-md-10">
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
+    <!--REVERSE TABLE  (REMOVED)-->   
 
 <!--FOOTER-->
 
@@ -415,6 +419,7 @@
 </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
   
+  
 
 · <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 
@@ -422,12 +427,39 @@
 
 · <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
+  <!--EXERCISE 18-->
+
+  <script>
+    $(Document).ready(function(){     
+      $('#mycarousel').carousel({interval:2000});
+      $('#carouselButton').click(function(){
+        if($('#carouselButton').children('span').hasClass('fa-pause')){ // if the span class have fa-pause, user click -> we know its pause btn
+          $('#mycarousel').carousel('pause');
+          $('#carouselButton').children('span').removeClass('fa-pause');
+          $('#carouselButton').children('span').addClass('fa-play');
+        }
+        else if ($('#carouselButton').children('span').hasClass('fa-play')){ // if the span class have fa-play, user click -> we know its play btn
+          $('#mycarousel').carousel('cycle'); // resume to default
+          $('#carouselButton').children('span').removeClass('fa-play');
+          $('#carouselButton').children('span').addClass('fa-pause');
+        }
+      }) //set the sliding to 2 seconds
+      // $('#carousel-pause').click(function(){
+      //   $('#mycarousel').carousel('pause');
+      // }) // when user click pause, exercute element inide the click()
+      // $('#carousel-play').click(function(){
+      //   $('#mycarousel').carousel('cycle'); // cycle resume default slide
+      })// when user click play, exercute element inide the click()
+  </script>
+  
+
+
   <script>
     // khởi tạo tooltip, select theo data-toggle
-    $(document).ready(function(){
+    // $(document).ready(function(){
       //khi data-toggle -> tooltip thì chạy hàm tooltip(), show data 
-      $('[data-toggle="tooltip"]').tooltip();
-    });
+ //     $('[data-toggle="tooltip"]').tooltip();
+   // });
   </script>
 
 </body>
