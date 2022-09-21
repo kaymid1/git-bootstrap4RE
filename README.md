@@ -18,3 +18,6 @@ ex13 done : 14/9
 Lab2 done : 16/9
 
 ex14-17 done : 18/9
+
+Lab 3 done: 21/9
+Ex 18 done : 21/9
