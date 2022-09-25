@@ -12,6 +12,8 @@
  <meta http-equiv="x-ua-compatible" content="ie=edge">
 
 <!-- Bootstrap CSS -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
 <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
@@ -20,7 +22,8 @@
 <link rel="stylesheet" href="css/loading.css">
 <link rel="stylesheet/less" href="css/styles.less">
 
-<script src="index.js"></script>
+<script src="js/index.js"></script>
+<script src="js/script.js"></script>
 <!-- Ex8-->
 <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
 
@@ -48,12 +51,22 @@
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-address-card fa-lg"> Menu</i></a></li>
                 </ul>
                 <!--ADDING MODAL INTO NAVBAR-->
+                <!-- <span class="navbar-text"> -->
+                  <!--data-toggle="modal": chuyển sang modal có id target là loginModal-->
+                  <!-- <a data-toggle="#" data-target="#loginModal" href="" id="loginContent" class="loginButton"> -->
+                    <!--Login button-->
+                    <!-- <span class="fa fa-sign-in"></span>  Login
+                  </a>
+                </span> -->
+                <!--Lab 4-->
                 <span class="navbar-text">
                   <!--data-toggle="modal": chuyển sang modal có id target là loginModal-->
-                  <a data-toggle="modal" data-target="#loginModal" href="" id="loginContent" class="">
-                    <span class="fa fa-sign-in"></span>  Login
-                  </a>
-                </span>
+                  <!-- <a data-toggle="modal" data-target="#loginModal" href="" id="loginButton" class="loginButton"> -->
+                    <!--Login button-->
+                    <!-- <span class="fa fa-sign-in"></span>  Login
+                  </a> -->
+                  <button type ="button"id ="loginButton" class="loginButton">Login</button>
+                </span>              
             </div>
             
         </div>
@@ -63,7 +76,7 @@
 
     <!--fade: when be call, it will fade in to the web page-->
     <!--role: dialog => place on top of the page-->
-    <div id="loginModal" class="modal fade" role="dialog">
+    <div id="loginModal" class="modal fade loginModal " role="dialog">
       <div class="modal-dialog modal-lg" role="content">
         <!--Modal content-->
         <div class="modal-content">
@@ -125,7 +138,8 @@
                 data-placement="bottom" href="#testform" 
                   >Reverse Table</a>-->
                   <div>
-                <a data-toggle="modal" data-target="#reverseModal" href="" id="reverseTable" class="bg-warning">Reverse Table</a>
+                <button type ="button"id ="reverseTable" class="reverseTable bg-warning">Reverse Table</button>
+                <!-- <a data-toggle="#" data-target="#reverseModal" href="" id="reverseTable" class="bg-warning">Reverse Table</a> -->
                 </div>           
         </div>
 
@@ -134,12 +148,12 @@
         <!--fade: when be call, it will fade in to the web page-->
         <!--role: dialog => place on top of the page-->
       <div class="container text-dark">
-        <div id="reverseModal" class="modal fade" role="dialog">
+        <div id="reverseModal" class="modal fade formModal" role="dialog">
           <div class="modal-dialog modal-lg" role="content">
             <!--Modal content-->
             <div class="modal-content">
               <div class="modal-header">
-                <h4 class="modal-title text-dark">Reverse Table</h4>
+                <h4 class="modal-title">Reverse Table</h4>
                 <!--class:close -> click will close the content-->
                 <!--data-dismiss="modal" : khi click thì modal sẽ biến mất khỏi màn hình-->
                   <button type="button" class="close" data-dismiss="modal">
@@ -214,6 +228,7 @@
 
                   <div class="form-group row">
                     <div class="offset-md-4 col-md-10">
+                      <button type="cancel" class="btn btn-secondary">Cancel</button>
                       <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
                   </div>
@@ -421,7 +436,6 @@
 </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
   
-  
 
 · <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 
@@ -454,7 +468,19 @@
       })// when user click play, exercute element inide the click()
   </script>
   
+  <script>
+    $(document).ready(function() {
 
+$('#loginButton').on('click', function() {
+    $('#loginModal').modal()
+});
+// $('#loginModal').on('hidden.bs.modal', function(e) {})
+// $(".dismiss").on('click', function() {
+//     $('#loginModal').modal('hide')
+// });
+
+});
+  </script>
 
   <script>
     // khởi tạo tooltip, select theo data-toggle
