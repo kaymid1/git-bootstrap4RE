@@ -2,341 +2,68 @@
   margin: 0px auto;
   padding: 0px 0px;
 }
+
 .row-content {
   margin: 0px auto;
   padding: 50px 0px;
   border-bottom: 1px ridge;
   min-height: 400px;
 }
+
 .footer {
-  background-color: #D1C4E9;
+  background-color: #d1c4e9;
   margin: 0px auto;
   padding: 20px 0px;
 }
+
 .jumbotron {
   margin: 0px auto;
   padding: 70px 30px;
-  background: #9575CD;
+  background: #9575cd;
   color: floralwhite;
 }
+
 address {
   font-size: 80%;
   margin: 0px;
   color: #0f0f0f;
 }
+
 body {
   padding: 50px 0px 0px 0px;
   z-index: 0;
 }
+
 .navbar-dark {
-  background-color: #512DA8;
+  background-color: #512da8;
 }
+
 .tab-content {
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   padding: 10px;
 }
+
 .carousel {
-  background: #512DA8;
+  background: #512da8;
 }
+
 .carousel .carousel-item {
   height: 300px;
 }
+
 .carousel .carousel-item img {
   position: absolute;
   top: 0;
   left: 0;
   min-height: 300px;
 }
+
 #carouselButton {
   right: 0px;
   position: absolute;
   bottom: 0px;
   z-index: 1;
 }
-
-/* Uthappizza */
-h3#contentOurLCC2 {
-  margin-right: 80px;
-}
-@media only screen and (max-width: 576px) {
-  #contentOurLCC1 {
-    display: none;
-  }
-}
-@media only screen and (max-width: 768px) {
-  #contentOurLCC1 {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 769px) {
-  #contentOurLCC2 {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 576px){
-  #dollaBadge1{
-    display:none;
-  }
-}
-
-@media only screen and (min-width:576px){
-  #dollaBadge2{
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 576px){
-  #hotBadge1{
-    display: none;
-  }
-}
-/* @media only screen and (max-width: 992px){
-  #hotBadge1{
-    display: none;
-  }
-} */
-
-@media only screen and (min-width: 576px){
-  #hotBadge2{
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 576px){
-  #hotBadge1{
-    display: none;
-  }
-}
-
-#hotBadge2, #dollaBadge2{
-  margin-right: 110px;
-  padding-top: 9px;
-  padding-bottom: 9px;
-  padding-right: 5px;
-  padding-left: 5px;
-  font-size: large;
-  margin-bottom: 5px;
-}
-#dollaBadge2{
-  padding-right: 9px;
-  padding-left: 9px;
-}
-
-/* #hotBadge2, #dollaBadge2, #uthappizzaContent{
-    
-} */
-
-/* WEEKEND GRAND BUFFET */
-
-#thisMonthContent1{
-  padding-top: 5%;
-}
-#thisMonthContent2{
-  width: 76%;
-}
-
-
-/* p#fadeshow2{
-  text-align: center;
-  height: 60%;
-  width: 100%;  
-} */
-
-@media only screen and (max-width: 576px){
-  #buffetImage{
-    position: relative;
-    top: 150px;
-  }
-}
-
-@media only screen and (min-width: 576px){
-  #thisMonthContent2{
-    display:none;
-  }
-}
-/* 627px */
-/* @media only screen and (max-width: 576px){ 
-  #thisMonthContent1{
-    position: relative;
-    bottom: 80px;
-    padding-right: 100px;
-  }
-}   */
-
-@media only screen and (max-width: 576px){
-  #thisMonthContent1{
-    display: none;
-  }
-}
-
-
-
-
-
-/* reverseTableButton */
-
-@media only screen and (max-width: 576px) {
-  #reverseTableButton1 {
-    display: block;
-  }
-}
-@media only screen and (max-width: 992px) {
-  #reverseTableButton1 {
-    display: none;
-  }
-}
-@media only screen and (min-width: 992px) {
-  #reverseTableButton2 {
-    display: none;
-  }
-}
-
-#reverseTableButton2{
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-/* REVERSE TABLE */
-@media only screen and (min-width: 767px){
-  #reverseFlex{
-    display: flex;
-    justify-content: center;
-  }
-}
-
-/* @media only screen and (max-width: 765px){
-  #reverseFlex{
-    display: none;
-  }
-} */
-
-/* @media only screen and (min-width: 765px){
-  #reverseFlex2{
-    display: none;
-
-  }
-}
-
-@media only screen and (max-width: 765px){
-  #reverseFlex2{
-    display: block;
-
-  }
-} */
-
-
-
-.btn-warning{
-  height: 20%;
-  margin-top: 46px;
-  margin-right: 43px;
-}
-.dateBox{
-  margin-left:67px;
-  width: min-content;
-}
-.timeBox{
-  margin-left: 50px;
-  width: min-content;
-}
-.placeholder{
-  text-align: left;
-}
-
-.tableReverse{
-  margin-left:57%;
-}
-
-#reverseTable{
-  color: white;
-  padding: 5px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-
-/* Khi màn hình nhỏ về 625px thì thông tin được undisplay */
-
-@media only  screen and (max-width: 625px) {
-  #fadeshow1 {
-      display: none;
-  }
-  #fadeshow2 {
-      display: none;
-  }
-  #fadeshow3 {
-      display: none;
-  }
-}
-
-/* */
-#buffetMove{
-  left: 35%;
-  text-align: center;
-}
-
-/* #buffetImage{
-  position: relative;
-  top: 70px;
-} */
-
-
-/* Modal loginform */
-
-#signinButtonRow{
-  margin-right: 150px;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-/* #signinbutton{
-  margin-left: 20%;
-} */
-#cancelbutton{
-  margin-right: 17%;
-}
-
-/* #signinbutton{
-  margin-right: 60px;
-} */
-
-/* 
-CAROUSEL */
-
-
-.carousel{
-  background: #512DA8;
-}
-
-.carousel-item{
-  height: 300px;
-}
-
-.carousel-item img{
-  position: absolute;
-  /* top: 0, left: 0 sẽ cho hình ảnh ra góc trái trên cùng của frame */
-  top: 0;
-  left: 0;
-  /* min-height: 300px sẽ cho khung hình trải ra hết height item */
-  min-height: 300px;
-}
-
-/* #fadeshow1, #fadeshow2, #fadeshow3{
-  margin-top: 200px;
-} */
-
-#sectionSmoke{
-  margin-left:100px;
-}
-
-#carouselButton{
-  right:0px;
-  position: absolute;
-  right: 0px;
-  
-
-}
+/*# sourceMappingURL=styles.css.map */
