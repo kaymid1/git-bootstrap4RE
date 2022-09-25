@@ -26,11 +26,13 @@
 }
 
 .jumbotron {
-  padding: 40px 30px 10px 38px;
+  padding: 50px 50px 50px 50px;
 
   margin: 0px auto;
 
-  background: #9575cd;
+  
+
+  background: #6c44b1;
 
   color: floralwhite;
 }
@@ -384,3 +386,4 @@ CAROUSEL */
   padding-top:10px;
 
 }
+
